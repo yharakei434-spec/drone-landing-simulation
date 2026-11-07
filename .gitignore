@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+.DS_Store
+/results/*_seed*.csv
+/results/report.json
+/results/analysis.json

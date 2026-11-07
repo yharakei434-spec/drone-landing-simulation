@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-27",
+  "training_seeds": [
+    111,
+    222,
+    333
+  ],
+  "test_seeds": [
+    444,
+    555
+  ],
+  "training_policy": "v8 fixed_low only",
+  "features": [
+    "log1p(area)",
+    "exposure",
+    "contrast/255",
+    "log1p(sharpness)",
+    "log1p(prior_nis)",
+    "estimated_height"
+  ],
+  "mean": [
+    7.4186993067855065,
+    0.8784787154298322,
+    0.8784787154298322,
+    2.5675781497748686,
+    0.015634906519636952,
+    0.7259176844028131
+  ],
+  "std": [
+    1.0890794252604827,
+    0.2811727617940999,
+    0.2811727617940999,
+    0.2091434704739493,
+    0.05467465533051734,
+    0.4331852091314934
+  ],
+  "coefficients": [
+    -13.913369676291312,
+    -0.7548792918993904,
+    -0.035758762947910694,
+    -0.035758762947911714,
+    -0.003357241632554609,
+    0.06893857699440943,
+    0.40089145155565636
+  ],
+  "ridge": 100,
+  "variance_scale": 2.901073521581165,
+  "sigma_floor_m": 0.0005,
+  "sigma_cap_m": 0.05,
+  "constant_variance": 4.386301014723848e-06,
+  "cv_scores": [
+    {
+      "ridge": 0.1,
+      "cv_nll": -11.87071554875352
+    },
+    {
+      "ridge": 1,
+      "cv_nll": -11.87352537913846
+    },
+    {
+      "ridge": 10,
+      "cv_nll": -11.890779419250201
+    },
+    {
+      "ridge": 100,
+      "cv_nll": -11.926686438538626
+    }
+  ],
+  "samples": 994,
+  "sources": [
+    {
+      "path": "calibration_data/blur_fixed_low_seed111_vision.csv",
+      "sha256": "a51f73fdd99c2b90044843e0252842152e46d1bcfe46656dadae833852f50b37"
+    },
+    {
+      "path": "calibration_data/dark_fixed_low_seed111_vision.csv",
+      "sha256": "adc3241369c0d175ade8b13227875a2c9cf5bd0bec927980893419ead3f6848f"
+    },
+    {
+      "path": "calibration_data/occlusion_fixed_low_seed111_vision.csv",
+      "sha256": "41ef7bc2668212d18d058d1d4f196b9e6c120514f5708a5bdebb57f9d1b0ec49"
+    },
+    {
+      "path": "calibration_data/blur_fixed_low_seed222_vision.csv",
+      "sha256": "78d5148d91adecbb41dd96f108f724bccee9cc6f19329d83a4a7b223010a4865"
+    },
+    {
+      "path": "calibration_data/dark_fixed_low_seed222_vision.csv",
+      "sha256": "3cbac3bd405d95159bd0de00b669ac74e892808944d2b425692bd856c1f17a98"
+    },
+    {
+      "path": "calibration_data/occlusion_fixed_low_seed222_vision.csv",
+      "sha256": "278b173bd9e9954054bbb0b4e6df4e7f040508c54987b64feeb572e7673097ba"
+    },
+    {
+      "path": "calibration_data/blur_fixed_low_seed333_vision.csv",
+      "sha256": "5b71bb1377174e0b3114ba2b0d8f8c475e1c57e9a53e86922576ec337cbf1c9d"
+    },
+    {
+      "path": "calibration_data/dark_fixed_low_seed333_vision.csv",
+      "sha256": "ac45d7f27c8b0127ed2033ac54ee734afc56033e1d0fe664b4a6679abc5cdbd7"
+    },
+    {
+      "path": "calibration_data/occlusion_fixed_low_seed333_vision.csv",
+      "sha256": "85aa958b1ea772bf2949356c593fb4fddd2e7b95846be93358a3edb86ef9d2eb"
+    }
+  ],
+  "oof_radial_95_coverage": 0.9496981891348089,
+  "note": "Offline synthetic ground-truth errors calibrate covariance only; no test errors or online truth inputs. CV grouped by seed; frames are correlated."
+}

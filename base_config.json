@@ -1,0 +1,26 @@
+{
+  "dt": 0.01,
+  "duration": 24,
+  "vision_period": 0.2,
+  "mass": 1.5,
+  "g": 9.81,
+  "inertia": [
+    0.025,
+    0.025,
+    0.045
+  ],
+  "arm_xy": 0.18,
+  "yaw_torque_per_thrust": 0.015,
+  "max_rotor_thrust": 8,
+  "motor_lag": 0.1,
+  "drag": 0.18,
+  "focal_px": 360,
+  "width": 480,
+  "height": 360,
+  "marker_m": 0.3,
+  "family": "DICT_ARUCO_ORIGINAL",
+  "landing_id": 102,
+  "handover_z": 0.38,
+  "max_tilt_deg": 18,
+  "freshness_s": 0.35
+}

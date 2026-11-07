@@ -1,0 +1,3 @@
+calibration_data/*.csv text eol=lf
+calibration_model.json text eol=lf
+results/comparison.csv text eol=lf
